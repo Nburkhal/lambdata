@@ -4,12 +4,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-twine = "*"
 
 [packages]
 numpy = "*"
 pandas = "*"
-os = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn = "*"
+xgboost = "*"
+eli5 = "*"
+pdpbox = "*"
+shap = "*"
+category-encoders = "*"
 
 [requires]
 python_version = "3.6"

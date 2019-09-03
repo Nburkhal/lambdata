@@ -17,7 +17,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='lambdata_nburkhal',
-    version = '0.0.2',
+    version = '0.0.3',
     description='A collection of Data Science helper functions',
     long_description= long_description,
     long_description_content_type="text/markdown",
