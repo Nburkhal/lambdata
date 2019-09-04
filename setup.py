@@ -12,7 +12,7 @@ REQUIRED = [
     'pandas',
     'scikit-learn',
     'category-encoders',
-    'matplotlib.pyplot',
+    'matplotlib',
     'seaborn',
     'pdpbox',
     'shap'
