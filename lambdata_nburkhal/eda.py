@@ -130,8 +130,7 @@ def interactive_plot(a, b, model, X_encoded):
 
 
 # Define explainer function to show shapley values for our test data
-def explainer(row_number, positive_class, positive_class_index=1, 
-              X_test, encoder, model):
+def explainer(row_number, positive_class, X_test, encoder, model):
     """Show individual model predictions with shapley value interpretation.
         For binary classification only!
 
@@ -146,7 +145,7 @@ def explainer(row_number, positive_class, positive_class_index=1,
     """
     
     positive_class = positive_class
-    positive_class_index = positive_class_index
+    positive_class_index = 1
     
     # Get & process the data for the row
     row = X_test.loc[[row_number]]
