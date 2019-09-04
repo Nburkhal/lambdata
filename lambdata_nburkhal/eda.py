@@ -52,14 +52,14 @@ def plot_confusion_matrix(y_true, y_pred):
 
 
 # Define function that pulls encoder mappings for the feature we specify
-def feature_mapping(feature, encoder):
+def feature_mapping(feature, encoder=ce.OrdinalEncoder()):
     """Assign variable names to encoder's ordering.
 
     Used for graphing purposes.
 
     feature = the values you want to extract
     encoder = the encoder you used on your data (ce.OrdinalEncoder(), 
-              ce.OneHotEncoder(), etc.)
+              ce.OneHotEncoder(), etc.). Default set to OrdinalEncoder().
 
     Set function's outputs to 3 separate variables to get the values, i.e.:
 
