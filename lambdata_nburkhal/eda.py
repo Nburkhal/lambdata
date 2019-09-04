@@ -8,7 +8,6 @@ from sklearn.metrics import classification_report, confusion_matrix, roc_auc_sco
 from sklearn.utils.multiclass import unique_labels
 from pdpbox.pdp import pdp_interact, pdp_interact_plot
 import shap
-from xgboost import XGBClassifier
 
 
 # Get descriptive statistics for numeric and non-numeric columns of a dataframe

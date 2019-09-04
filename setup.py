@@ -9,7 +9,13 @@ import setuptools
 
 REQUIRED = [
     'numpy',
-    'pandas'
+    'pandas',
+    'scikit-learn',
+    'category-encoders',
+    'matplotlib.pyplot',
+    'seaborn',
+    'pdpbox',
+    'shap'
 ]
 
 with open("README.md", "r") as fh:
