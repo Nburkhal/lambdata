@@ -126,7 +126,7 @@ def interactive_plot(a, b, model, X_encoded):
 
     # Set plot's figure size
     plt.figure(figsize=(10,8))
-    return sns.heatmap(pdp, annot=True, fmt='.2f', cmap='YlGnBu');
+    return sns.heatmap(pdp, annot=True, fmt='.2f', cmap='YlGnBu')
 
 
 # Define explainer function to show shapley values for our test data
@@ -153,7 +153,6 @@ def explainer(row_number, positive_class, X_test, encoder, model):
     
      # Call model for prediction
     pred = model.predict(row_processed)
-    predict = pred[0]
     
     # Get predicted probability
     pred_proba = model.predict_proba(row_processed)[0,positive_class_index]
